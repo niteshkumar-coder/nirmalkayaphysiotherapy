@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Phone, MessageCircle, Calendar, ChevronRight, HeartPulse } from 'lucide-react';
+import clinicHero from '../assets/images/clinic_hero_1779204781890.png';
 
 export default function Hero() {
   const trustPoints = [
@@ -13,9 +14,10 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/src/assets/images/clinic_hero_1779204781890.png" 
+          src={clinicHero} 
           alt="Nirmal Kaya Clinic Background"
           className="w-full h-full object-cover"
+          referrerPolicy="no-referrer"
         />
         {/* Very subtle gradient overlay just for text legibility */}
         <div className="absolute inset-0 bg-black/10"></div>
