@@ -39,7 +39,7 @@ export default function Navbar() {
         </nav>
         <div className="flex gap-6 items-center border-l border-white/20 pl-8">
           <div className="text-right">
-            <p className="text-[10px] opacity-80 uppercase font-black text-clinic-yellow">Expert Care by</p>
+            <p className="text-[10px] opacity-100 uppercase font-black text-[#facc15] tracking-wider animate-pulse">🏏 BCCI Bihar Senior Physio</p>
             <p className="text-sm font-bold">Dr. Kundan Kumar <span className="text-[10px] font-normal text-clinic-yellow opacity-100">(BPT, MPT, MIAP)</span></p>
           </div>
           <div className="flex gap-2">
@@ -80,7 +80,8 @@ export default function Navbar() {
             ))}
             <div className="flex flex-col gap-3 pt-4">
                <div className="text-center mb-2">
-                 <p className="text-[10px] text-clinic-yellow uppercase font-bold">Dr. Kundan Kumar (BPT, MPT, MIAP)</p>
+                 <p className="text-[10.5px] text-[#facc15] uppercase font-black tracking-wide">🏏 BCCI BIHAR SENIOR PHYSIO</p>
+                 <p className="text-[11px] text-white font-bold opacity-90">Dr. Kundan Kumar (BPT, MPT, MIAP)</p>
                </div>
               <a href="tel:+919899532930" className="btn-secondary w-full justify-center text-xs">
                 <Phone size={16} />

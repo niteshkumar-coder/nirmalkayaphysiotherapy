@@ -5,7 +5,7 @@ export default function About() {
   const credentials = [
     { icon: <GraduationCap />, title: 'Qualification', desc: 'BPT, MPT, MIAP (Master of Physiotherapy)' },
     { icon: <Briefcase />, title: 'Experience', desc: '20 Years of clinical practice in Delhi and Patna' },
-    { icon: <Award />, title: 'Work History', desc: 'Worked in prestigious Delhi Hospitals & Sports Institutions' },
+    { icon: <Award />, title: 'Sports Association', desc: 'Senior Physiotherapist, BCCI Bihar Cricket Team' },
     { icon: <UserCheck />, title: 'Specialization', desc: 'Orthopedic Rehab, Sports Injury & Pain Management' },
   ];
 
@@ -39,13 +39,19 @@ export default function About() {
             viewport={{ once: true }}
             className="w-full lg:w-7/12"
           >
-            <p className="text-clinic-red font-bold uppercase tracking-widest text-sm mb-4">Dedicated Professional</p>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-clinic-blue font-extrabold text-xs md:text-sm mb-4 shadow-sm hover:scale-105 transition-transform duration-300">
+              <span className="flex h-3 w-3 relative">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-clinic-blue"></span>
+              </span>
+              🏏 Senior Physiotherapist for BCCI Bihar Cricket Team
+            </div>
             <h2 className="section-title">Meet Dr. Kundan Kumar</h2>
             <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-              Dr. Kundan Kumar is a highly skilled and compassionate physiotherapist dedicated to restoring movement and improving the quality of life for his patients. With a Bachelor's and Master's in Physiotherapy, he brings deep clinical knowledge and a personalized approach to every treatment plan.
+              Dr. Kundan Kumar is a highly skilled, compassionate, and acclaimed physiotherapist who serves as the <strong className="text-clinic-blue font-black underline decoration-clinic-yellow decoration-3">Senior Physiotherapist for the BCCI Bihar Cricket Team</strong>. He matches elite athletic-grade sports medicine with deep clinical empathy, bringing state-of-the-art rehabilitation techniques directly to everyday patients in Patna.
             </p>
             <p className="text-gray-600 text-lg mb-10 leading-relaxed">
-              Having spent a decade working in top-tier hospitals in Delhi and various sports organizations, Dr. Kumar has encountered a vast range of physical conditions—from acute athletic injuries to chronic post-operative stiffness and complex neurological cases.
+              With a Master&apos;s in Physiotherapy (MPT) and over two decades of experience spanning premier Delhi hospitals and prestigious sports organizations, Dr. Kumar is uniquely equipped to treat a wide array of physical conditions—from intense sports injuries to complex chronic joint disorders and neurological recovery.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

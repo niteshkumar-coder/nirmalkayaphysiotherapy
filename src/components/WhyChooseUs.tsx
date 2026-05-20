@@ -10,8 +10,8 @@ const trustPoints = [
   {
     id: 'experienced',
     title: 'Experienced Physiotherapist',
-    subtitle: 'Managed by Dr. Kundan Kumar, who has 20+ years of clinical experience.',
-    description: 'This means patients receive treatment from an experienced professional with deep knowledge in physiotherapy and rehabilitation.',
+    subtitle: 'Managed by Dr. Kundan Kumar, Senior Physiotherapist for BCCI Bihar Cricket Team with 20+ years clinical experience.',
+    description: 'Patients receive care directly from a state-recognized medical professional entrusted with elite-level sports recovery and high-performance physical care.',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
     alt: 'Dr. Kundan Kumar Physiotherapy Consultation',
     icon: Users,
@@ -55,8 +55,8 @@ const trustPoints = [
   {
     id: 'sports',
     title: 'Sports Injury Expertise',
-    subtitle: 'The clinic specializes in treating sports-related injuries.',
-    description: 'Athletes and sports professionals receive recovery plans designed specifically for sports injuries and performance improvement.',
+    subtitle: 'Official athletic rehabilitation directed by BCCI Bihar Cricket Team\'s Senior Physiotherapist.',
+    description: 'Athletes, fitness professionals, and active individuals receive tailored elite recovery plans designed for fast, safe, and robust return-to-play performance.',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE-RAeuI0cGhDv--ridY8rY4usjFnXbHissQ&s',
     alt: 'Sports therapist treating athlete shoulder injury',
     icon: Stethoscope,
