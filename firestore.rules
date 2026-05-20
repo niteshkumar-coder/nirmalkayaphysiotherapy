@@ -30,7 +30,10 @@ service cloud.firestore {
     }
 
     match /appointments/{appointmentId} {
-      allow create: if isValidAppointment(incoming());
+      allow create: if request.resource.data.name is string && 
+                    request.resource.data.phone is string && 
+                    request.resource.data.date is string && 
+                    request.resource.data.time is string;
       // For now, allow reading all appointments so the admin dashboard works with the password
       // In a production app, this should be restricted to authenticated admin users
       allow read: if true; 
