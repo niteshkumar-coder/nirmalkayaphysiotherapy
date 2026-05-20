@@ -50,9 +50,22 @@ export default function Contact() {
       });
 
       setTimeout(() => setIsSuccess(false), 5000);
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error booking appointment:', error);
-      alert('Failed to book appointment. Please check your connection.');
+      let errMsg = 'Failed to book appointment. Please check your connection.';
+      try {
+        if (error instanceof Error) {
+          const parsed = JSON.parse(error.message);
+          if (parsed && parsed.error) {
+            errMsg = `Booking failed: ${parsed.error}`;
+          }
+        }
+      } catch (e) {
+        if (error instanceof Error) {
+          errMsg = `Booking failed: ${error.message}`;
+        }
+      }
+      alert(errMsg);
     } finally {
       setIsSubmitting(false);
     }
