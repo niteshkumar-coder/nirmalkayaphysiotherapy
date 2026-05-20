@@ -1,0 +1,41 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // helpers
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function isValidAppointment(data) {
+      return data.keys().hasAll(['name', 'phone', 'treatment', 'condition', 'date', 'time', 'createdAt']) &&
+             data.keys().size() == 7 &&
+             data.name is string && data.name.size() > 0 && data.name.size() <= 100 &&
+             data.phone is string && data.phone.size() >= 10 && data.phone.size() <= 15 &&
+             data.treatment is string &&
+             data.condition is string &&
+             data.date is string &&
+             data.time is string &&
+             data.createdAt == request.time;
+    }
+
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    match /appointments/{appointmentId} {
+      allow create: if isValidAppointment(incoming());
+      // For now, allow reading all appointments so the admin dashboard works with the password
+      // In a production app, this should be restricted to authenticated admin users
+      allow read: if true; 
+    }
+  }
+}

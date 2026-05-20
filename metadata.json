@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Nirmal Kaya Physiotherapy \u0026 Rehabilitation Center",
+  "description": "Professional physiotherapy and rehabilitation services by Dr. Kundan Kumar in Patna. Expert care for pain management, sports injuries, and recovery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

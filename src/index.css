@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-clinic-blue: #1e3a8a;
+  --color-clinic-red: #dc2626;
+  --color-clinic-yellow: #facc15;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 rounded bg-clinic-blue text-white font-bold transition-all hover:bg-blue-800 hover:shadow-lg active:translate-y-0.5 flex items-center justify-center gap-2;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 rounded bg-clinic-red text-white font-bold transition-all hover:bg-red-700 hover:shadow-lg active:translate-y-0.5 flex items-center justify-center gap-2;
+  }
+
+  .btn-accent {
+    @apply px-6 py-3 rounded bg-clinic-yellow text-clinic-blue font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all uppercase text-sm flex items-center justify-center gap-2;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 rounded border-2 border-clinic-blue text-clinic-blue font-bold transition-all hover:bg-clinic-blue hover:text-white active:translate-y-0.5 flex items-center justify-center gap-2;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-display font-extrabold text-clinic-blue mb-4 leading-tight;
+  }
+
+  .card {
+    @apply bg-white p-6 rounded-xl shadow-sm border border-slate-200 transition-all hover:shadow-md;
+  }
+
+  .nav-header {
+    @apply bg-clinic-blue text-white border-b-4 border-clinic-yellow sticky top-0 z-50;
+  }
+}

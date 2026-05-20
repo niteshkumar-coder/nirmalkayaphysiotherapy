@@ -1,0 +1,25 @@
+{
+  "entities": {
+    "Appointment": {
+      "title": "Appointment",
+      "description": "Patient appointment booking record",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Patient full name" },
+        "phone": { "type": "string", "description": "Patient phone number" },
+        "treatment": { "type": "string", "description": "Type of treatment" },
+        "condition": { "type": "string", "description": "Brief description of condition" },
+        "date": { "type": "string", "description": "Preferred date" },
+        "time": { "type": "string", "description": "Preferred time" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp" }
+      },
+      "required": ["name", "phone", "treatment", "date", "time", "createdAt"]
+    }
+  },
+  "firestore": {
+    "appointments/{appointmentId}": {
+      "schema": "Appointment",
+      "description": "Collection of all patient appointments"
+    }
+  }
+}
