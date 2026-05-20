@@ -15,15 +15,13 @@ service cloud.firestore {
     }
 
     function isValidAppointment(data) {
-      return data.keys().hasAll(['name', 'phone', 'treatment', 'condition', 'date', 'time', 'createdAt']) &&
-             data.keys().size() == 7 &&
-             data.name is string && data.name.size() > 0 && data.name.size() <= 150 &&
-             data.phone is string && data.phone.size() >= 5 && data.phone.size() <= 25 &&
-             data.treatment is string &&
-             data.condition is string &&
+      return data.name is string && data.name.size() > 0 && data.name.size() <= 250 &&
+             data.phone is string && data.phone.size() >= 4 && data.phone.size() <= 50 &&
              data.date is string &&
              data.time is string &&
-             data.createdAt == request.time;
+             (!('treatment' in data) || data.treatment is string) &&
+             (!('condition' in data) || data.condition is string) &&
+             (!('createdAt' in data) || data.createdAt is timestamp);
     }
 
     // Default deny
