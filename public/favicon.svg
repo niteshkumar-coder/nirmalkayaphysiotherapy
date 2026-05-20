@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef08a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#facc15;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Base Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#bg-grad)" />
+  
+  <!-- Outer Ring representing wholeness and care -->
+  <circle cx="256" cy="256" r="215" fill="none" stroke="#ffffff" stroke-width="8" stroke-opacity="0.25" />
+
+  <!-- Active Wellness figure raising hands up in celebration of recovery -->
+  <circle cx="256" cy="150" r="36" fill="url(#gold-grad)" />
+  <path d="M256 198c-38 0-88 20-110 52-8 12-4 28 8 36 12 8 28 4 36-8 12-18 34-32 66-32s54 14 66 32c8 12 24 16 36 8 12-8 16-24 8-36-22-32-72-52-110-52z" fill="url(#gold-grad)" />
+  
+  <!-- Supporting/Caring Hands embracing from bottom sides -->
+  <!-- Left Supporting Shape -->
+  <path d="M125 320c18-45 52-80 100-90 14-3 26 6 29 20s-6 26-20 29c-32 6-54 28-66 58-5 13-20 20-33 15-13-5-20-20-15-33z" fill="#ffffff" />
+  <!-- Right Supporting Shape -->
+  <path d="M387 320c-18-45-52-80-100-90-14-3-26 6-29 20s6 26 20 29c32 6 54 28 66 58 5 13 20 20 33 15 13-5 20-20 15-33z" fill="#ffffff" />
+  
+  <!-- Spinal Alignment & Recovery Pillar (Clinic Red) -->
+  <g fill="#dc2626">
+    <circle cx="256" cy="285" r="15" />
+    <circle cx="256" cy="325" r="15" />
+    <circle cx="256" cy="365" r="15" />
+    <circle cx="256" cy="405" r="15" />
+  </g>
+</svg>
