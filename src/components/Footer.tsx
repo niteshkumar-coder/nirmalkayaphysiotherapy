@@ -1,4 +1,4 @@
-import { HeartPulse, Facebook, Twitter, Instagram, Linkedin, ArrowUp } from 'lucide-react';
+import { HeartPulse, Facebook, Youtube, Linkedin, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -38,9 +38,9 @@ export default function Footer() {
              <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-right">
                 <p className="text-[10px] text-clinic-blue uppercase font-black mb-2 tracking-widest">Connect with us</p>
                 <div className="flex gap-2 justify-end">
-                  <div className="w-8 h-8 rounded bg-clinic-blue text-white flex items-center justify-center hover:bg-clinic-red transition-colors cursor-pointer"><Facebook size={16} /></div>
-                  <div className="w-8 h-8 rounded bg-clinic-blue text-white flex items-center justify-center hover:bg-clinic-red transition-colors cursor-pointer"><Instagram size={16} /></div>
-                  <div className="w-8 h-8 rounded bg-clinic-blue text-white flex items-center justify-center hover:bg-clinic-red transition-colors cursor-pointer"><Linkedin size={16} /></div>
+                  <a href="https://www.facebook.com/profile.php?id=100063772314198" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded bg-clinic-blue text-white flex items-center justify-center hover:bg-clinic-red transition-colors" title="Facebook Page"><Facebook size={16} /></a>
+                  <a href="https://www.youtube.com/@dr.kundankumar9926/videos" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded bg-clinic-blue text-white flex items-center justify-center hover:bg-clinic-red transition-colors" title="YouTube Channel"><Youtube size={16} /></a>
+                  <a href="https://in.linkedin.com/in/dr-kundan-kumar-a44211247" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded bg-clinic-blue text-white flex items-center justify-center hover:bg-clinic-red transition-colors" title="LinkedIn Profile"><Linkedin size={16} /></a>
                 </div>
              </div>
           </div>

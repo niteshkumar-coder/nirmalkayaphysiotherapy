@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, MessageCircle, Send, Clock, Calendar, CheckCircle2, User } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Send, Clock, Calendar, CheckCircle2, User, Facebook, Youtube, Linkedin } from 'lucide-react';
 import { generateAppointmentSlip } from '../utils/receiptGenerator';
 import { db, handleFirestoreError, OperationType } from '../lib/firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
@@ -111,7 +111,40 @@ export default function Contact() {
                </div>
             </div>
 
-            <a 
+             <div className="border-t border-slate-100 pt-5 mt-2 mb-6">
+                <p className="text-[10px] text-slate-400 font-extrabold uppercase tracking-widest mb-3">Connect on Social Media</p>
+                <div className="flex flex-wrap gap-2.5">
+                   <a 
+                     href="https://www.facebook.com/profile.php?id=100063772314198" 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     className="flex items-center gap-2 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-clinic-blue/40 px-3.5 py-2 rounded-xl transition-all duration-300 text-slate-600 hover:text-clinic-blue"
+                   >
+                      <Facebook size={14} className="text-clinic-blue" />
+                      <span className="text-xs font-bold font-sans">Facebook</span>
+                   </a>
+                   <a 
+                     href="https://www.youtube.com/@dr.kundankumar9926/videos" 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     className="flex items-center gap-2 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-clinic-red/40 px-3.5 py-2 rounded-xl transition-all duration-300 text-slate-600 hover:text-clinic-red"
+                   >
+                      <Youtube size={14} className="text-clinic-red" />
+                      <span className="text-xs font-bold font-sans">YouTube</span>
+                   </a>
+                   <a 
+                     href="https://in.linkedin.com/in/dr-kundan-kumar-a44211247" 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     className="flex items-center gap-2 bg-slate-50 hover:bg-indigo-50 border border-slate-200 hover:border-indigo-500/40 px-3.5 py-2 rounded-xl transition-all duration-300 text-slate-600 hover:text-indigo-600"
+                   >
+                      <Linkedin size={14} className="text-indigo-600" />
+                      <span className="text-xs font-bold font-sans">LinkedIn</span>
+                   </a>
+                </div>
+             </div>
+
+             <a 
               href="https://maps.app.goo.gl/DB3Hrkdqznpp9UJg8" 
               target="_blank" 
               rel="noopener noreferrer"
