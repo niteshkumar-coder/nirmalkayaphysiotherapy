@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-white rounded flex items-center justify-center p-1 shadow-sm overflow-hidden">
                 <img 
-                  src="https://i.ibb.co/NzRN34x/9c74e7a6-9f4d-45a0-a03c-ec692c643647-removebg-preview.png" 
+                  src="/favicon.svg" 
                   alt="Nirmal Kaya Logo" 
                   className="w-full h-full object-contain"
                   referrerPolicy="no-referrer"
