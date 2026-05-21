@@ -24,11 +24,11 @@ function HomePage() {
       <main>
         <Hero />
         <About />
+        <Gallery />
         <Services />
         <Treatments />
         <WhyChooseUs />
         <Testimonials />
-        <Gallery />
         <Contact />
       </main>
       <Footer />
