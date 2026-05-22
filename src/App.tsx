@@ -23,8 +23,8 @@ function HomePage() {
       <Navbar />
       <main>
         <Hero />
-        <About />
         <Gallery />
+        <About />
         <Services />
         <Treatments />
         <WhyChooseUs />
