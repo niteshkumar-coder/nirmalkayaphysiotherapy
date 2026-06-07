@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /favicon.png
+Allow: /favicon.ico
+
+Sitemap: https://nirmalkaya.online/sitemap.xml
