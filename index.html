@@ -2,10 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Polyfill to protect against read-only window.fetch assignment errors in sandboxed/iframe environments -->
+    <script>
+      try {
+        var originalFetch = window.fetch;
+        if (originalFetch) {
+          var currentFetch = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return currentFetch;
+            },
+            set: function(val) {
+              currentFetch = val;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        }
+      } catch (e) {
+        console.warn('Polyfill failed for window.fetch:', e);
+      }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nirmal Kaya Physiotherapy &amp; Rehabilitation Center | Dr. Kundan Kumar</title>
     <meta name="google-site-verification" content="JfRQGsCzLDwZ69kkB0e4fo7q4H4VVJtd0E3Oq9-UJlQ" />
     <!-- Custom Favicon for Google Search Results and Browser Tabs -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" href="/favicon.png" sizes="192x192" />
     <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
     <link rel="icon" type="image/png" href="/favicon.png" sizes="48x48" />
