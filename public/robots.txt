@@ -1,6 +1,21 @@
+# Robots.txt for Nirmal Kaya Physiotherapy Clinic
+# Fully optimized for Google Search, Google Maps, Bing, and Local SEO
+
 User-agent: *
 Allow: /
-Allow: /favicon.png
-Allow: /favicon.ico
+Allow: /about
+Allow: /services
+Allow: /services/
+Allow: /blog
+Allow: /blog/
+Allow: /faq
+Allow: /success-stories
+Allow: /book
+Allow: /contact
 
+# Disallow administrative portals to speed up crawler budget on clinical pages
+Disallow: /admin
+Disallow: /admin/
+
+# Sitemaps declaration
 Sitemap: https://nirmalkaya.online/sitemap.xml
