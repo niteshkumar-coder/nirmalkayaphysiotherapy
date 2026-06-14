@@ -46,7 +46,8 @@ export default function Hero() {
                <a href="#contact" className="bg-[#facc15] hover:bg-[#eab308] text-clinic-blue font-black py-3 px-6 md:py-5 md:px-10 rounded-lg shadow-xl shadow-yellow-500/40 hover:shadow-2xl transition-all uppercase text-[11px] md:text-sm tracking-widest flex items-center justify-center flex-1">
                  SCHEDULE VISIT
                </a>
-               <a href="tel:+919899532930" className="bg-white text-slate-700 border-2 border-slate-200 font-black py-3 px-6 md:py-5 md:px-10 rounded-lg shadow-sm hover:shadow-md transition-all uppercase text-[11px] md:text-sm tracking-widest flex items-center justify-center flex-1">
+               <a href="tel:+918294059645" className="bg-white text-slate-700 border-2 border-slate-200 font-black py-3 px-6 md:py-5 md:px-10 rounded-lg shadow-sm hover:shadow-md transition-all uppercase text-[11px] md:text-sm tracking-widest flex items-center justify-center flex-1">
+                 <Phone size={16} className="mr-2 text-clinic-red shrink-0 animate-pulse" />
                  Call Now
                </a>
             </div>

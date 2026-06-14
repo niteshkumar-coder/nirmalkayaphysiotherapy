@@ -46,8 +46,10 @@ export default function Navbar() {
             <p className="text-sm font-bold">Dr. Kundan Kumar <span className="text-[10px] font-normal text-clinic-yellow opacity-100">(BPT, MPT, MIAP)</span></p>
           </div>
           <div className="flex gap-2">
-            <a href="tel:+919899532930" className="bg-clinic-red hover:bg-red-700 px-4 py-2 rounded font-bold text-xs transition-colors uppercase">Call: 9899532930</a>
-            <a href="https://wa.me/919899532930" className="bg-[#25D366] hover:bg-green-600 px-4 py-2 rounded font-bold text-xs transition-colors flex items-center gap-1 uppercase">
+            <a href="tel:+918294059645" className="bg-clinic-red hover:bg-red-700 px-3 py-2 rounded font-bold text-xs transition-colors uppercase flex items-center gap-1">
+              <Phone size={12} /> Call: 8294059645
+            </a>
+            <a href="https://wa.me/919899532930" className="bg-[#25D366] hover:bg-green-600 px-3 py-2 rounded font-bold text-xs transition-colors flex items-center gap-1 uppercase">
               <MessageCircle size={14} />
               WhatsApp
             </a>
@@ -82,13 +84,17 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="flex flex-col gap-3 pt-4">
-               <div className="text-center mb-2">
+               <div className="text-center mb-1">
                  <p className="text-[10.5px] text-[#facc15] uppercase font-black tracking-wide">🏏 BCCI BIHAR SENIOR PHYSIO</p>
                  <p className="text-[11px] text-white font-bold opacity-90">Dr. Kundan Kumar (BPT, MPT, MIAP)</p>
                </div>
-              <a href="tel:+919899532930" className="btn-secondary w-full justify-center text-xs">
+              <a href="tel:+918294059645" className="btn-secondary w-full justify-center text-xs bg-clinic-red hover:bg-red-800 animate-pulse">
                 <Phone size={16} />
-                CALL: 9899532930
+                CALL DR. KUNDAN: 8294059645
+              </a>
+              <a href="tel:+919899532930" className="btn-outline w-full justify-center text-xs bg-white text-clinic-blue border-white hover:bg-slate-100">
+                <Phone size={16} />
+                RECEPTION CLINIC: 9899532930
               </a>
               <a href="https://wa.me/919899532930" className="bg-[#25D366] text-white py-3 px-6 rounded font-bold w-full flex items-center justify-center gap-2 text-xs">
                 <MessageCircle size={18} />

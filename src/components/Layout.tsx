@@ -18,6 +18,25 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-900 font-sans">
+      {/* Top Prominent Mobile Highlight Banner for Direct Call */}
+      <div id="top-hotline" className="bg-clinic-yellow text-clinic-blue py-2 px-4 shadow-[0_2px_15px_rgba(30,58,138,0.08)] flex items-center justify-center gap-2 border-b border-clinic-blue/10 relative z-50 text-center flex-wrap">
+        <span className="flex h-2.5 w-2.5 relative shrink-0">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-clinic-red"></span>
+        </span>
+        <span className="font-display font-black uppercase tracking-wider text-[10px] md:text-xs">
+          Direct Doctor Consultation Call:
+        </span>
+        <a 
+          href="tel:+918294059645" 
+          id="hotline-phone-link"
+          className="bg-clinic-red text-white py-1.5 px-3 rounded font-black tracking-widest text-[11px] md:text-xs hover:bg-red-700 transition-all shadow-md active:scale-95 flex items-center gap-1 animate-pulse"
+        >
+          <Phone size={12} className="shrink-0" />
+          +91 8294059645
+        </a>
+      </div>
+
       {/* Dynamic Header */}
       <Navbar />
 
